@@ -7,7 +7,7 @@ import java.awt.Color;
  * @author Gonzalo Izuzquiza
  */
 public class P4_GonzaloIzuzquiza extends javax.swing.JFrame {
-
+    XPATH gesXpath = new XPATH();
     public P4_GonzaloIzuzquiza() {
         initComponents();
         this.getContentPane().setBackground(Color.RED); // damos color al fondo del jFrame
@@ -48,7 +48,7 @@ public class P4_GonzaloIzuzquiza extends javax.swing.JFrame {
                         .addGap(134, 134, 134)
                         .addComponent(xpath_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 512, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(180, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
