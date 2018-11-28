@@ -30,12 +30,13 @@ public class XPATH {
             //Ahora recorre la lista para sacar los resultados
             if (consulta.equals("/Futbol/Equipo")) {
                 for (int i = 0; i < nodeList.getLength(); i++) {
-                    salida = salida + "\n" + nodeList.item(i).getAttributes().item(0).getNodeValue();
-                    salida = salida + "\n" + nodeList.item(i).getAttributes().item(1).getNodeValue();
-                    salida = salida + "\n" + nodeList.item(i).getAttributes().item(2).getNodeValue();
-                    salida = salida + "\n" + nodeList.item(i).getAttributes().item(3).getNodeValue();
-                    salida = salida + "\n" + nodeList.item(i).getAttributes().item(4).getNodeValue();
+                    salida = salida + "\n" + nodeList.item(i).getAttributes().getNamedItem("Nombre_equipo").getNodeValue();
+                    salida = salida + "\n" + nodeList.item(i).getAttributes().getNamedItem("Goles_a_favor").getNodeValue();
+                    salida = salida + "\n" + nodeList.item(i).getAttributes().getNamedItem("Goles_en_contra").getNodeValue();
+                    salida = salida + "\n" + nodeList.item(i).getAttributes().getNamedItem("Estadio").getNodeValue();
+                    salida = salida + "\n" + nodeList.item(i).getAttributes().getNamedItem("Presidente").getNodeValue();
                     salida = salida + "\n" + nodeList.item(i).getTextContent();
+
                 }
             } else {
                 for (int i = 0; i < nodeList.getLength(); i++) {
