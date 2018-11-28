@@ -44,7 +44,7 @@ public class DOM {
         }
     }
 
-    public String recorrerDOMyMostrarlo(Document doc) {
+    public String recorrerDOMyMostrarlo() {
 
         String datos_nodo[] = null;
         String salida = "";
@@ -75,7 +75,7 @@ public class DOM {
                 salida = salida + "\n" + "Jugador mejor pagado:" + datos_nodo[7];
                 salida = salida + "\n" + "Máximo goleador:" + datos_nodo[8];
                 salida = salida + "\n" + "Capitán:" + datos_nodo[9];
-                salida = salida + "\n" + "Último fichaje:" + datos_nodo[10];
+                salida = salida + "\n" + "Ultimo fichaje:" + datos_nodo[10];
                 salida = salida + "\n -----------------";
             }
         }
@@ -90,7 +90,7 @@ public class DOM {
 
         //obtencion del primer atributo del nodo
         datos[0] = n.getAttributes().item(0).getNodeValue();
-        
+
         //obtencion de los hijos del libro que son el titulo y el autor
         NodeList nodos = n.getChildNodes();
 
@@ -109,31 +109,63 @@ public class DOM {
         return datos;
     }
 
-    public int annadirDOM(String titulo, String autor, String anno) {
+    public int annadirDOM(Document doc ,String thebest, String coach, String dinero, String goles, String capi, String ultimo,
+            String nombre, String favor, String contra, String estadio, String presi) {
 
         try {
 
-            //creamos un nodo para el titulo, se crea tipo texto y se añade
-            Node ntitulo = doc.createElement("Titulo");
-            Node ntitulo_text = doc.createTextNode(titulo);
-            ntitulo.appendChild(ntitulo_text);
+            //creamos un nodo para el mejor jugador, se crea tipo texto y se añade
+            Node nthebest = doc.createElement("Mejor_jugador_de_la_historia");
+            Node nthebest_text = doc.createTextNode(thebest);
+            nthebest.appendChild(nthebest_text);
 
-            //creamos un nodo para el autor, se crea tipo texto y se añade
-            Node nautor = doc.createElement("Autor");
-            Node nautor_text = doc.createTextNode(autor);
-            nautor.appendChild(nautor_text);
+            //creamos un nodo para el entrenador, se crea tipo texto y se añade
+            Node ncoach = doc.createElement("Entrenador");
+            Node ncoach_text = doc.createTextNode(coach);
+            ncoach.appendChild(ncoach_text);
 
-            // creamos un nodo para libro
-            Node nlibro = doc.createElement("Libro");
-            //añadimos un atributo
-            ((Element) nlibro).setAttribute("publicado_en", anno);
-            //añadimos a libro el autor y titulo 
-            nlibro.appendChild(ntitulo);
-            nlibro.appendChild(nautor);
+            //creamos un nodo para el mejor pagado, se crea tipo texto y se añade
+            Node ndinero = doc.createElement("Jugador_mejor_pagado");
+            Node ndinero_text = doc.createTextNode(dinero);
+            ndinero.appendChild(ndinero_text);
 
-            //obtenemos el primer nodo del documento y se le añade como hijo del nodo libro
+            //creamos un nodo para el pichichi, se crea tipo texto y se añade
+            Node ngoles = doc.createElement("Maximo_goleador");
+            Node ngoles_text = doc.createTextNode(goles);
+            ngoles.appendChild(ngoles_text);
+
+            //creamos un nodo para el capitan, se crea tipo texto y se añade
+            Node ncapi = doc.createElement("Capitan");
+            Node ncapi_text = doc.createTextNode(capi);
+            ncapi.appendChild(ncapi_text);
+
+            //creamos un nodo para el ultimo fichaje, se crea tipo texto y se añade
+            Node nultimo = doc.createElement("Ultimo_fichaje");
+            Node nultimo_text = doc.createTextNode(ultimo);
+            nultimo.appendChild(nultimo_text);
+
+            // creamos un nodo para equipo
+            Node nEquipo = doc.createElement("Equipo");
+
+            //añadimos los atributos
+            ((Element) nEquipo).setAttribute("Nombre_equipo", nombre);
+            ((Element) nEquipo).setAttribute("Goles_a_favor", favor);
+            ((Element) nEquipo).setAttribute("Goles_en_contra", contra);
+            ((Element) nEquipo).setAttribute("Estadio", estadio);
+            ((Element) nEquipo).setAttribute("Presidente", presi);
+
+            //añadimos a equipo todos los elementos
+            nEquipo.appendChild(nthebest);
+            nEquipo.appendChild(ncoach);
+            nEquipo.appendChild(ndinero);
+            nEquipo.appendChild(ngoles);
+            nEquipo.appendChild(ncapi);
+            nEquipo.appendChild(nultimo);
+
+            //obtenemos el nodo del documento y se le añade como hijo del nodo equipo
             Node raiz = doc.getChildNodes().item(0);
-            raiz.appendChild(nlibro);
+            raiz.appendChild(nEquipo);
+            
 
             return 0;
 
@@ -143,21 +175,36 @@ public class DOM {
         }
     }
 
-    public int guardarDOMcomoFILE(String nombre) {
+    public int guardarDOMcomoFILE(File ruta) {
 
+//        try {
+//
+//            //creamos un fichero al que le pasamos el nombre para que luego guarde donde quiera
+//            File archivo_xml = new File(nombre);
+//
+//            //especificamos el formato de salida
+//            OutputFormat format = new OutputFormat(doc);
+//
+//            //especificamos que la salida este identada
+//            format.setIndenting(true);
+//
+//            //escribe el contenido en el FILE
+//            XMLSerializer serializer = new XMLSerializer(new FileOutputStream(archivo_xml), format);
+//            serializer.serialize(doc);
+//
+//            return 0;
+//
+//        } catch (Exception e) {
+//            return -1;
+//        }
         try {
 
-            //creamos un fichero al que le pasamos el nombre para que luego guarde donde quiera
-            File archivo_xml = new File(nombre);
-
-            //especificamos el formato de salida
             OutputFormat format = new OutputFormat(doc);
 
-            //especificamos que la salida este identada
             format.setIndenting(true);
 
-            //escribe el contenido en el FILE
-            XMLSerializer serializer = new XMLSerializer(new FileOutputStream(archivo_xml), format);
+            XMLSerializer serializer = new XMLSerializer(new FileOutputStream(ruta), format);
+
             serializer.serialize(doc);
 
             return 0;
@@ -166,5 +213,4 @@ public class DOM {
             return -1;
         }
     }
-
 }

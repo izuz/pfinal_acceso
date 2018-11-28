@@ -3,12 +3,14 @@ package paquete;
 import java.awt.Color;
 import java.io.File;
 import javax.swing.JFileChooser;
+import org.w3c.dom.Document;
 
 /**
  * @author Gonzalo Izuzquiza
  */
 public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
 
+    DOM gesDom = new DOM();
     SAX gesSax = new SAX();
     XPATH gesXpath = new XPATH();
     File fichero = null;
@@ -335,7 +337,16 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     }//GEN-LAST:event_ejecutarActionPerformed
 
     private void annadir_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_annadir_botonActionPerformed
-        
+        //gesDom.abrir_XML_DOM(fichero);
+        //gesDom.recorrerDOMyMostrarlo();
+        texto.setText("");
+        Document documento = gesDom.doc;
+        gesDom.annadirDOM(documento, equipo_texto.getText(),a_favor_texto.getText(), en_contra_texto.getText(), estadio_texto.getText(), 
+                          presi_texto.getText(),thebest_texto.getText(), coach_texto.getText(), €€_texto.getText(), pichichi_texto.getText(),
+                          capi_texto.getText(), ultimo_fichaje_texto.getText());
+        annadido_texto.setText("Añadido correctamente");
+        gesDom.guardarDOMcomoFILE(gesSax.fXML);
+        texto.setText(gesSax.recorrerSAX());
     }//GEN-LAST:event_annadir_botonActionPerformed
 
     /**
