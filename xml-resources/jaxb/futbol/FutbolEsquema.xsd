@@ -1,0 +1,25 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Futbol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Equipo" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Mejor_jugador_de_la_historia"/>
+              <xs:element type="xs:string" name="Entrenador"/>
+              <xs:element type="xs:string" name="Jugador_mejor_pagado"/>
+              <xs:element type="xs:string" name="Maximo_goleador"/>
+              <xs:element type="xs:string" name="Capitan"/>
+              <xs:element type="xs:string" name="Ultimo_fichaje"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="Nombre_equipo" use="optional"/>
+            <xs:attribute type="xs:string" name="Goles_a_favor" use="optional"/>
+            <xs:attribute type="xs:string" name="Goles_en_contra" use="optional"/>
+            <xs:attribute type="xs:string" name="Estadio" use="optional"/>
+            <xs:attribute type="xs:string" name="Presidente" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
