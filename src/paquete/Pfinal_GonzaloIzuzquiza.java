@@ -72,6 +72,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
         ultimo_fichaje_texto = new javax.swing.JTextField();
         annadir_boton = new javax.swing.JButton();
         guardar_boton = new javax.swing.JButton();
+        annadido_texto = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -106,7 +107,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
         jScrollPane2.setViewportView(escribir_con);
 
         ejecutar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        ejecutar.setText("Ejecutar");
+        ejecutar.setText("EJECUTAR");
         ejecutar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ejecutarActionPerformed(evt);
@@ -163,9 +164,16 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
 
         annadir_boton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         annadir_boton.setText("AÑADIR");
+        annadir_boton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                annadir_botonActionPerformed(evt);
+            }
+        });
 
         guardar_boton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         guardar_boton.setText("GUARDAR");
+
+        annadido_texto.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -226,7 +234,10 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(cargado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(nuevo_texto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(47, 47, 47))))))
+                                .addGap(47, 47, 47))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(annadido_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -248,7 +259,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(cargado, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(nuevo_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -295,12 +306,14 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(ultimo_fichaje, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(ultimo_fichaje_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(annadir_boton, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(guardar_boton, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 665, Short.MAX_VALUE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                            .addComponent(guardar_boton, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(annadido_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1))
+                .addContainerGap())
         );
 
         pack();
@@ -321,6 +334,10 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
         texto.setText(gesXpath.salida);
     }//GEN-LAST:event_ejecutarActionPerformed
 
+    private void annadir_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_annadir_botonActionPerformed
+        
+    }//GEN-LAST:event_annadir_botonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -338,6 +355,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     private javax.swing.JLabel a_favor;
     private javax.swing.JTextField a_favor_texto;
     private javax.swing.JButton abrir;
+    private javax.swing.JLabel annadido_texto;
     private javax.swing.JButton annadir_boton;
     private javax.swing.JLabel capi;
     private javax.swing.JTextField capi_texto;
