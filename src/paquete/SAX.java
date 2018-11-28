@@ -51,22 +51,42 @@ public class SAX {
         @Override
         public void startElement(String uri, String localName, String qName, Attributes atts) throws SAXException {
 
-            if (qName.equals("Libro")) {
-                cadena_resultado = cadena_resultado + "\nPublicado en: " + atts.getValue(atts.getQName(0)) + "\n";
+            if (qName.equals("Equipo")) {
+                cadena_resultado = cadena_resultado + "\nNombre del equipo: " + atts.getValue(atts.getQName(0)) + "\n";
                 ultimoelement = 1;
-            } else if (qName.equals("Titulo")) {
+                cadena_resultado = cadena_resultado + "\nGoles a favor: " + atts.getValue(atts.getQName(1)) + "\n";
                 ultimoelement = 2;
-                cadena_resultado = cadena_resultado + "\nEl título es: ";
-            } else if (qName.equals("Autor")) {
+                cadena_resultado = cadena_resultado + "\nGoles en contra: " + atts.getValue(atts.getQName(2)) + "\n";
                 ultimoelement = 3;
-                cadena_resultado = cadena_resultado + "\nEl autor es: ";
+                cadena_resultado = cadena_resultado + "\nEstadio: " + atts.getValue(atts.getQName(3)) + "\n";
+                ultimoelement = 4;
+                cadena_resultado = cadena_resultado + "\nPresidente: " + atts.getValue(atts.getQName(4)) + "\n";
+                ultimoelement = 5;
+            } else if (qName.equals("Mejor_jugador_de_la_historia")) {
+                ultimoelement = 6;
+                cadena_resultado = cadena_resultado + "\nEl mejor jugador de la historia es: ";
+            } else if (qName.equals("Entrenador")) {
+                ultimoelement = 7;
+                cadena_resultado = cadena_resultado + "\nEl entrenador es: ";
+            } else if (qName.equals("Jugador_mejor_pagado")) {
+                ultimoelement = 8;
+                cadena_resultado = cadena_resultado + "\nEl jugador mejor pagado es: ";
+            } else if (qName.equals("Maximo_goleador")) {
+                ultimoelement = 9;
+                cadena_resultado = cadena_resultado + "\nEl pichichi es: ";
+            } else if (qName.equals("Capitan")) {
+                ultimoelement = 10;
+                cadena_resultado = cadena_resultado + "\nEl capitán es: ";
+            } else if (qName.equals("Ultimo_fichaje")) {
+                ultimoelement = 11;
+                cadena_resultado = cadena_resultado + "\nEl último fichaje es: ";
             }
         }
 
         @Override
         public void endElement(String uri, String localName, String qName) throws SAXException {
 
-            if (qName.equals("Libro")) {
+            if (qName.equals("Equipo")) {
                 System.out.println("He encontrado el final de un elemento");
                 cadena_resultado = cadena_resultado + "\n -------------";
             }
@@ -75,12 +95,28 @@ public class SAX {
         @Override
         public void characters(char[] ch, int start, int lenght) throws SAXException {
 
-            if (ultimoelement == 2) {
+            if (ultimoelement == 6) {
                 for (int i = start; i < lenght + start; i++) {
                     cadena_resultado = cadena_resultado + ch[i];
                 }
 
-            } else if (ultimoelement == 3) {
+            } else if (ultimoelement == 7) {
+                for (int i = start; i < lenght + start; i++) {
+                    cadena_resultado = cadena_resultado + ch[i];
+                }
+            } else if (ultimoelement == 8) {
+                for (int i = start; i < lenght + start; i++) {
+                    cadena_resultado = cadena_resultado + ch[i];
+                }
+            } else if (ultimoelement == 9) {
+                for (int i = start; i < lenght + start; i++) {
+                    cadena_resultado = cadena_resultado + ch[i];
+                }
+            } else if (ultimoelement == 10) {
+                for (int i = start; i < lenght + start; i++) {
+                    cadena_resultado = cadena_resultado + ch[i];
+                }
+            } else if (ultimoelement == 11) {
                 for (int i = start; i < lenght + start; i++) {
                     cadena_resultado = cadena_resultado + ch[i];
                 }
