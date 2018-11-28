@@ -39,7 +39,7 @@ public class JAXB {
         String datos_nodo[] = null;
         String cadena_resultado = "";
 
-        //Crea una lista con objetos de tipo libro
+        //Crea una lista con objetos de tipo futbol
         List<Futbol.Equipo> lFutbol = mifutbol.getEquipo();
 
         // recorremos la lista para sacar los valores
