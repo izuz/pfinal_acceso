@@ -109,7 +109,7 @@ public class DOM {
         return datos;
     }
                            //Document doc ,
-    public int annadirDOM(Document doc ,String thebest, String coach, String dinero, String goles, String capi, String ultimo,
+    public int annadirDOM(String thebest, String coach, String dinero, String goles, String capi, String ultimo,
             String nombre, String favor, String contra, String estadio, String presi) {
 
         try {

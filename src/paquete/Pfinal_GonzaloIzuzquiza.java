@@ -19,7 +19,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
         initComponents();
         this.getContentPane().setBackground(Color.RED); // damos color al fondo del jFrame
         this.setLocationRelativeTo(null); // con esto hacemos que la pnatalla se abra en el centro de la pantalla
-        setSize(950, 870);//con esto damo un tamñano pasando dos parametros, siendo ancho y alto, a la pantalla
+        setSize(900, 880);//con esto damo un tamñano pasando dos parametros, siendo ancho y alto, a la pantalla
     }
 
     private File abrirDocumento() {
@@ -221,7 +221,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                                             .addComponent(presi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(guardar_boton, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                                            .addComponent(guardar_boton, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE)
                                             .addComponent(a_favor_texto)
                                             .addComponent(en_contra_texto)
                                             .addComponent(estadio_texto)
@@ -349,8 +349,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
         gesDom.abrir_XML_DOM(fichero);
         gesDom.recorrerDOMyMostrarlo();
         //texto.setText("");
-        Document documento = gesDom.doc;
-        gesDom.annadirDOM(documento, equipo_texto.getText(), a_favor_texto.getText(), en_contra_texto.getText(), estadio_texto.getText(),
+        gesDom.annadirDOM(equipo_texto.getText(), a_favor_texto.getText(), en_contra_texto.getText(), estadio_texto.getText(),
                 presi_texto.getText(), thebest_texto.getText(), coach_texto.getText(), €€_texto.getText(), pichichi_texto.getText(),
                 capi_texto.getText(), ultimo_fichaje_texto.getText());
         annadido_texto.setText("Añadido correctamente");
