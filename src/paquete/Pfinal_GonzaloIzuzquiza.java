@@ -3,6 +3,8 @@ package paquete;
 import java.awt.Color;
 import java.io.File;
 import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import org.w3c.dom.Document;
 
 /**
@@ -36,6 +38,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
         return fichero;
     }
 
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -174,6 +177,11 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
 
         guardar_boton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         guardar_boton.setText("GUARDAR");
+        guardar_boton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                guardar_botonActionPerformed(evt);
+            }
+        });
 
         annadido_texto.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
@@ -337,17 +345,21 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     }//GEN-LAST:event_ejecutarActionPerformed
 
     private void annadir_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_annadir_botonActionPerformed
-        //gesDom.abrir_XML_DOM(fichero);
-        //gesDom.recorrerDOMyMostrarlo();
-        texto.setText("");
+        gesDom.abrir_XML_DOM(fichero);
+        gesDom.recorrerDOMyMostrarlo();
+        //texto.setText("");
         Document documento = gesDom.doc;
-        gesDom.annadirDOM(documento, equipo_texto.getText(),a_favor_texto.getText(), en_contra_texto.getText(), estadio_texto.getText(), 
-                          presi_texto.getText(),thebest_texto.getText(), coach_texto.getText(), €€_texto.getText(), pichichi_texto.getText(),
-                          capi_texto.getText(), ultimo_fichaje_texto.getText());
+        gesDom.annadirDOM(documento, equipo_texto.getText(), a_favor_texto.getText(), en_contra_texto.getText(), estadio_texto.getText(),
+                presi_texto.getText(), thebest_texto.getText(), coach_texto.getText(), €€_texto.getText(), pichichi_texto.getText(),
+                capi_texto.getText(), ultimo_fichaje_texto.getText());
         annadido_texto.setText("Añadido correctamente");
-        gesDom.guardarDOMcomoFILE(gesSax.fXML);
+        gesDom.guardarDOMcomoFILE(fichero);
         texto.setText(gesSax.recorrerSAX());
     }//GEN-LAST:event_annadir_botonActionPerformed
+
+    private void guardar_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardar_botonActionPerformed
+        
+    }//GEN-LAST:event_guardar_botonActionPerformed
 
     /**
      * @param args the command line arguments

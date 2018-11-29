@@ -55,7 +55,7 @@ public class JAXB {
             cadena_resultado = cadena_resultado + "\n" + "El pichichi es: " + lFutbol.get(i).getMaximoGoleador();
             cadena_resultado = cadena_resultado + "\n" + "El capitan es: " + lFutbol.get(i).getCapitan();
             cadena_resultado = cadena_resultado + "\n" + "El último fichaje es: " + lFutbol.get(i).getUltimoFichaje();
-            cadena_resultado = cadena_resultado + "\n -----------------------------";
+            cadena_resultado = cadena_resultado + "\n ---------------------------------------";
         }
         return cadena_resultado;
     }

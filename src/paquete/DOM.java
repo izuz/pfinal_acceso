@@ -65,18 +65,18 @@ public class DOM {
                 //es nodo
                 datos_nodo = procesarEquipo(node);
 
-                salida = salida + "\n" + "Nombre del equipo:" + datos_nodo[0];
-                salida = salida + "\n" + "Goles a favor:" + datos_nodo[1];
-                salida = salida + "\n" + "Goles en contra:" + datos_nodo[2];
-                salida = salida + "\n" + "Estadio:" + datos_nodo[3];
-                salida = salida + "\n" + "Presidente:" + datos_nodo[4];
-                salida = salida + "\n" + "Mejor jugador de la historia:" + datos_nodo[5];
-                salida = salida + "\n" + "Entrenador:" + datos_nodo[6];
-                salida = salida + "\n" + "Jugador mejor pagado:" + datos_nodo[7];
-                salida = salida + "\n" + "Máximo goleador:" + datos_nodo[8];
-                salida = salida + "\n" + "Capitán:" + datos_nodo[9];
-                salida = salida + "\n" + "Ultimo fichaje:" + datos_nodo[10];
-                salida = salida + "\n -----------------";
+//                salida = salida + "\n" + "Nombre del equipo:" + datos_nodo[0];
+//                salida = salida + "\n" + "Goles a favor:" + datos_nodo[1];
+//                salida = salida + "\n" + "Goles en contra:" + datos_nodo[2];
+//                salida = salida + "\n" + "Estadio:" + datos_nodo[3];
+//                salida = salida + "\n" + "Presidente:" + datos_nodo[4];
+//                salida = salida + "\n" + "Mejor jugador de la historia:" + datos_nodo[5];
+//                salida = salida + "\n" + "Entrenador:" + datos_nodo[6];
+//                salida = salida + "\n" + "Jugador mejor pagado:" + datos_nodo[7];
+//                salida = salida + "\n" + "Máximo goleador:" + datos_nodo[8];
+//                salida = salida + "\n" + "Capitán:" + datos_nodo[9];
+//                salida = salida + "\n" + "Ultimo fichaje:" + datos_nodo[10];
+//                salida = salida + "\n -----------------";
             }
         }
         return salida;
@@ -108,7 +108,7 @@ public class DOM {
         }
         return datos;
     }
-
+                           //Document doc ,
     public int annadirDOM(Document doc ,String thebest, String coach, String dinero, String goles, String capi, String ultimo,
             String nombre, String favor, String contra, String estadio, String presi) {
 
@@ -175,36 +175,17 @@ public class DOM {
         }
     }
 
-    public int guardarDOMcomoFILE(File ruta) {
-
-//        try {
-//
-//            //creamos un fichero al que le pasamos el nombre para que luego guarde donde quiera
-//            File archivo_xml = new File(nombre);
-//
-//            //especificamos el formato de salida
-//            OutputFormat format = new OutputFormat(doc);
-//
-//            //especificamos que la salida este identada
-//            format.setIndenting(true);
-//
-//            //escribe el contenido en el FILE
-//            XMLSerializer serializer = new XMLSerializer(new FileOutputStream(archivo_xml), format);
-//            serializer.serialize(doc);
-//
-//            return 0;
-//
-//        } catch (Exception e) {
-//            return -1;
-//        }
+    public int guardarDOMcomoFILE(File fichero) {
         try {
 
+            //especificamos el formato de salida
             OutputFormat format = new OutputFormat(doc);
 
+            //especificamos que la salida este identada
             format.setIndenting(true);
 
-            XMLSerializer serializer = new XMLSerializer(new FileOutputStream(ruta), format);
-
+            //escribe el contenido en el FILE
+            XMLSerializer serializer = new XMLSerializer(new FileOutputStream(fichero), format);
             serializer.serialize(doc);
 
             return 0;
