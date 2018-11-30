@@ -3,8 +3,8 @@ package paquete;
 import java.awt.Color;
 import java.io.File;
 import javax.swing.JFileChooser;
-import org.w3c.dom.Document;
-
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 /**
  * @author Gonzalo Izuzquiza
  */
@@ -358,7 +358,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     }//GEN-LAST:event_annadir_botonActionPerformed
 
     private void guardar_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardar_botonActionPerformed
-        
+
     }//GEN-LAST:event_guardar_botonActionPerformed
 
     /**
