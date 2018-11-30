@@ -23,82 +23,75 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+                  <Component id="cargado" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="abrir" min="-2" pref="210" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="mostrar" min="-2" pref="210" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="nuevo_texto" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="jScrollPane1" min="-2" pref="495" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="annadido_texto" min="-2" pref="170" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="equipo" pref="170" max="32767" attributes="0"/>
+                                  <Component id="en_contra" max="32767" attributes="0"/>
+                                  <Component id="a_favor" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="estadio" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="a_favor_texto" alignment="0" pref="160" max="32767" attributes="0"/>
+                                  <Component id="en_contra_texto" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="estadio_texto" max="32767" attributes="0"/>
+                                  <Component id="equipo_texto" alignment="0" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="nuevo_texto" max="32767" attributes="0"/>
-                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="equipo" min="-2" pref="170" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="equipo_texto" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="thebest" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="coach" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="€€" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="pichichi" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="capi" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="ultimo_fichaje" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="en_contra" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="a_favor" max="32767" attributes="0"/>
-                                          <Component id="annadir_boton" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="estadio" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="presi" alignment="0" max="32767" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="annadir_boton" min="-2" pref="170" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="guardar_boton" pref="158" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="thebest" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="coach" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="€€" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="pichichi" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="capi" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="ultimo_fichaje" alignment="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="presi" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="guardar_boton" alignment="0" pref="182" max="32767" attributes="0"/>
-                                          <Component id="a_favor_texto" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="en_contra_texto" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="estadio_texto" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="capi_texto" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="ultimo_fichaje_texto" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="capi_texto" pref="160" max="32767" attributes="0"/>
                                           <Component id="pichichi_texto" alignment="0" max="32767" attributes="0"/>
                                           <Component id="€€_texto" alignment="0" max="32767" attributes="0"/>
                                           <Component id="coach_texto" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="thebest_texto" max="32767" attributes="0"/>
                                           <Component id="presi_texto" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="thebest_texto" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="ultimo_fichaje_texto" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <Component id="annadido_texto" min="-2" pref="170" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="texto_consulta" min="-2" pref="136" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="ejecutar" max="32767" attributes="0"/>
-                          <Component id="jScrollPane2" pref="276" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="abrir" min="-2" pref="210" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="mostrar" min="-2" pref="210" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                          <Component id="cargado" alignment="0" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="17" max="32767" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace pref="33" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -106,36 +99,22 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane2" min="-2" pref="67" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                              <Component id="texto_consulta" min="-2" pref="35" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="ejecutar" min="-2" pref="33" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="abrir" alignment="3" min="-2" pref="56" max="-2" attributes="0"/>
-                          <Component id="mostrar" alignment="3" min="-2" pref="56" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="cargado" min="-2" pref="52" max="-2" attributes="0"/>
-                  </Group>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="abrir" alignment="3" min="-2" pref="56" max="-2" attributes="0"/>
+                  <Component id="mostrar" alignment="3" min="-2" pref="56" max="-2" attributes="0"/>
+                  <Component id="nuevo_texto" alignment="3" min="-2" pref="57" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="0" pref="61" max="32767" attributes="0"/>
-                      <Component id="nuevo_texto" min="-2" pref="57" max="-2" attributes="0"/>
+                      <Component id="cargado" min="-2" pref="56" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="equipo" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="equipo_texto" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="equipo_texto" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -150,54 +129,52 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="estadio" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="estadio_texto" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="estadio_texto" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="presi" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="presi_texto" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="thebest" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="thebest_texto" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="thebest" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="coach" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="€€" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pichichi" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="capi" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="ultimo_fichaje" min="-2" pref="40" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="thebest_texto" min="-2" pref="41" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="coach_texto" min="-2" pref="41" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="€€_texto" min="-2" pref="41" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pichichi_texto" min="-2" pref="41" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="capi_texto" min="-2" pref="41" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="ultimo_fichaje_texto" min="-2" pref="41" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="coach" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="coach_texto" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="annadir_boton" min="-2" pref="64" max="-2" attributes="0"/>
+                          <Component id="guardar_boton" min="-2" pref="64" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="€€" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="€€_texto" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="pichichi" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="pichichi_texto" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="capi" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="capi_texto" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="ultimo_fichaje" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="ultimo_fichaje_texto" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="annadir_boton" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
-                          <Component id="guardar_boton" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="annadido_texto" min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="annadido_texto" min="-2" pref="22" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jScrollPane1" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace pref="17" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -248,40 +225,6 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="texto_consulta">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="12" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Escribe tu consulta:"/>
-      </Properties>
-    </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextArea" name="escribir_con">
-          <Properties>
-            <Property name="columns" type="int" value="20"/>
-            <Property name="rows" type="int" value="5"/>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
-    <Component class="javax.swing.JButton" name="ejecutar">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="12" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="EJECUTAR"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ejecutarActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="equipo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -381,7 +324,7 @@
         <Property name="text" type="java.lang.String" value="&#xda;ltimo fichaje"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="equipo_texto">
+    <Component class="javax.swing.JTextField" name="estadio_texto">
     </Component>
     <Component class="javax.swing.JTextField" name="a_favor_texto">
     </Component>
@@ -396,7 +339,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="en_contra_texto">
     </Component>
-    <Component class="javax.swing.JTextField" name="estadio_texto">
+    <Component class="javax.swing.JTextField" name="equipo_texto">
     </Component>
     <Component class="javax.swing.JTextField" name="presi_texto">
     </Component>

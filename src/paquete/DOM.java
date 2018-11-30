@@ -86,22 +86,26 @@ public class DOM {
 
         String datos[] = new String[10];
         Node ntemp = null;
-        int contador = 1;
+        int contador = 5;
 
         //obtencion del primer atributo del nodo
         datos[0] = n.getAttributes().item(0).getNodeValue();
+        datos[1] = n.getAttributes().item(0).getNodeValue();
+        datos[2] = n.getAttributes().item(0).getNodeValue();
+        datos[3] = n.getAttributes().item(0).getNodeValue();
+        datos[4] = n.getAttributes().item(0).getNodeValue();
 
         //obtencion de los hijos del libro que son el titulo y el autor
         NodeList nodos = n.getChildNodes();
 
-        for (int i = 0; i < nodos.getLength(); i++) {
+        for (int i = 5; i < nodos.getLength(); i++) {
 
             ntemp = nodos.item(i);
 
             if (ntemp.getNodeType() == Node.ELEMENT_NODE) {
 
                 //obtencion del texto del titulo y autor accediendo al nodo text hijo de ntemp y se saca su valor
-                datos[contador] = ntemp.getChildNodes().item(0).getNodeValue();
+                datos[contador] = ntemp.getTextContent();
 
                 contador++;
             }
@@ -109,8 +113,8 @@ public class DOM {
         return datos;
     }
                            //Document doc ,
-    public int annadirDOM(String thebest, String coach, String dinero, String goles, String capi, String ultimo,
-            String nombre, String favor, String contra, String estadio, String presi) {
+    public int annadirDOM(String nombre, String favor, String contra, String estadio, String presi,
+            String thebest, String coach, String dinero, String goles, String capi, String ultimo){
 
         try {
 
