@@ -36,7 +36,6 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="nuevo_texto" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -54,44 +53,46 @@
                                   <Component id="equipo_texto" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="annadir_boton" min="-2" pref="170" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="guardar_boton" pref="158" max="32767" attributes="0"/>
-                              </Group>
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="thebest" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="coach" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="€€" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="pichichi" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="capi" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="ultimo_fichaje" alignment="0" max="32767" attributes="0"/>
-                                          </Group>
-                                          <Component id="presi" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                          <Component id="capi_texto" pref="160" max="32767" attributes="0"/>
-                                          <Component id="pichichi_texto" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="€€_texto" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="coach_texto" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="presi_texto" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="thebest_texto" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="ultimo_fichaje_texto" max="32767" attributes="0"/>
-                                      </Group>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="thebest" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="coach" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="€€" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="pichichi" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="capi" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="ultimo_fichaje" alignment="0" max="32767" attributes="0"/>
                                   </Group>
-                                  <Component id="annadido_texto" min="-2" pref="170" max="-2" attributes="0"/>
+                                  <Component id="presi" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="capi_texto" max="32767" attributes="0"/>
+                                  <Component id="pichichi_texto" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="€€_texto" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="coach_texto" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="presi_texto" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="thebest_texto" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="ultimo_fichaje_texto" alignment="1" min="-2" pref="160" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <Component id="annadido_texto" min="-2" pref="170" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="0" pref="17" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="nuevo_texto" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="annadir_boton" min="-2" pref="170" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="guardar_boton" min="-2" pref="154" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="7" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="33" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -166,9 +167,9 @@
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="annadir_boton" min="-2" pref="64" max="-2" attributes="0"/>
-                          <Component id="guardar_boton" min="-2" pref="64" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="annadir_boton" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
+                          <Component id="guardar_boton" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="annadido_texto" min="-2" pref="22" max="-2" attributes="0"/>
