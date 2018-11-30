@@ -5,6 +5,7 @@ import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+
 /**
  * @author Gonzalo Izuzquiza
  */
@@ -19,7 +20,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
         initComponents();
         this.getContentPane().setBackground(Color.RED); // damos color al fondo del jFrame
         this.setLocationRelativeTo(null); // con esto hacemos que la pnatalla se abra en el centro de la pantalla
-        setSize(900, 880);//con esto damo un tamñano pasando dos parametros, siendo ancho y alto, a la pantalla
+        setSize(850, 730);//con esto damo un tamñano pasando dos parametros, siendo ancho y alto, a la pantalla
     }
 
     private File abrirDocumento() {
@@ -36,7 +37,6 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
         return fichero;
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -72,6 +72,10 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
         annadir_boton = new javax.swing.JButton();
         guardar_boton = new javax.swing.JButton();
         annadido_texto = new javax.swing.JLabel();
+        menu = new javax.swing.JMenuBar();
+        consultaas_menu = new javax.swing.JMenu();
+        todos_los_datos = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -164,6 +168,18 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
 
         annadido_texto.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
+        consultaas_menu.setText("Consultas");
+
+        todos_los_datos.setText("Todos los datos");
+        consultaas_menu.add(todos_los_datos);
+
+        jMenuItem2.setText("jMenuItem2");
+        consultaas_menu.add(jMenuItem2);
+
+        menu.add(consultaas_menu);
+
+        setJMenuBar(menu);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -172,11 +188,14 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane1)
-                    .addComponent(cargado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(abrir, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(cargado, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(abrir, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(mostrar, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(mostrar, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
+                            .addComponent(annadido_texto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -211,8 +230,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                                     .addComponent(coach_texto, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(presi_texto, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(thebest_texto, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(ultimo_fichaje_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(annadido_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(ultimo_fichaje_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -235,7 +253,9 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                 .addGap(1, 1, 1)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(cargado, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(cargado, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
+                            .addComponent(annadido_texto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane1))
                     .addGroup(layout.createSequentialGroup()
@@ -287,10 +307,8 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(annadir_boton, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(guardar_boton, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(annadido_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(17, Short.MAX_VALUE))
+                            .addComponent(guardar_boton, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -309,7 +327,6 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     private void annadir_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_annadir_botonActionPerformed
         gesDom.abrir_XML_DOM(fichero);
         gesDom.recorrerDOMyMostrarlo();
-        //texto.setText("");
         gesDom.annadirDOM(estadio_texto.getText(), a_favor_texto.getText(), en_contra_texto.getText(), equipo_texto.getText(),
                 presi_texto.getText(), thebest_texto.getText(), coach_texto.getText(), €€_texto.getText(), pichichi_texto.getText(),
                 capi_texto.getText(), ultimo_fichaje_texto.getText());
@@ -346,6 +363,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     private javax.swing.JLabel cargado;
     private javax.swing.JLabel coach;
     private javax.swing.JTextField coach_texto;
+    private javax.swing.JMenu consultaas_menu;
     private javax.swing.JLabel en_contra;
     private javax.swing.JTextField en_contra_texto;
     private javax.swing.JLabel equipo;
@@ -353,7 +371,9 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     private javax.swing.JLabel estadio;
     private javax.swing.JTextField estadio_texto;
     private javax.swing.JButton guardar_boton;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JMenuBar menu;
     private javax.swing.JButton mostrar;
     private javax.swing.JLabel nuevo_texto;
     private javax.swing.JLabel pichichi;
@@ -363,6 +383,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     private javax.swing.JTextArea texto;
     private javax.swing.JLabel thebest;
     private javax.swing.JTextField thebest_texto;
+    private javax.swing.JMenuItem todos_los_datos;
     private javax.swing.JLabel ultimo_fichaje;
     private javax.swing.JTextField ultimo_fichaje_texto;
     private javax.swing.JLabel €€;
