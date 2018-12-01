@@ -11,10 +11,11 @@ import javax.swing.JOptionPane;
  */
 public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
 
+    File fichero = null;
     DOM gesDom = new DOM();
     SAX gesSax = new SAX();
     XPATH gesXpath = new XPATH();
-    File fichero = null;
+    JAXB gesJaxb = new JAXB();
 
     public Pfinal_GonzaloIzuzquiza() {
         initComponents();
@@ -336,7 +337,8 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     }//GEN-LAST:event_annadir_botonActionPerformed
 
     private void guardar_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardar_botonActionPerformed
-
+        //String elementos = texto.getText();
+        gesJaxb.guardarJaxb(fichero, texto.getText());
     }//GEN-LAST:event_guardar_botonActionPerformed
 
     /**

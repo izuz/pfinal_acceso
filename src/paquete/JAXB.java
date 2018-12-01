@@ -5,6 +5,8 @@ import java.util.List;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 import futbol_binding.Futbol;
+import java.io.FileWriter;
+import javax.xml.bind.Marshaller;
 
 /**
  * @author Gonzalo Izuzquiza
@@ -60,4 +62,16 @@ public class JAXB {
         return cadena_resultado;
     }
 
+    public int guardarJaxb(File guradadoconJAXB, String nombre_archivo) {
+
+        try {
+            JAXBContext jaxbContext = JAXBContext.newInstance(Futbol.class);
+            Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            jaxbMarshaller.marshal(nombre_archivo, new FileWriter("guradadoconJAXB.xml"));
+            return 0;
+        } catch (Exception e) {
+            return -1;
+        }
+    }
 }
