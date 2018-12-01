@@ -112,9 +112,10 @@ public class DOM {
         }
         return datos;
     }
-                           //Document doc ,
+    //Document doc ,
+
     public int annadirDOM(String nombre, String favor, String contra, String estadio, String presi,
-            String thebest, String coach, String dinero, String goles, String capi, String ultimo){
+            String thebest, String coach, String dinero, String goles, String capi, String ultimo) {
 
         try {
 
@@ -169,7 +170,6 @@ public class DOM {
             //obtenemos el nodo del documento y se le añade como hijo del nodo equipo
             Node raiz = doc.getChildNodes().item(0);
             raiz.appendChild(nEquipo);
-            
 
             return 0;
 

@@ -36,7 +36,7 @@ public class XPATH {
                     salida = salida + "\n Estadio: " + nodeList.item(i).getAttributes().getNamedItem("Estadio").getNodeValue();
                     salida = salida + "\n Presidente: " + nodeList.item(i).getAttributes().getNamedItem("Presidente").getNodeValue();
                     salida = salida + "\n" + nodeList.item(i).getTextContent();
-                    
+
                 }
             } else {
                 for (int i = 0; i < nodeList.getLength(); i++) {

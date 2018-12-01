@@ -52,13 +52,13 @@ public class SAX {
         public void startElement(String uri, String localName, String qName, Attributes atts) throws SAXException {
 
             if (qName.equals("Equipo")) {
-                cadena_resultado = cadena_resultado + "\nNombre del equipo: " + atts.getValue(atts.getQName(0)) + "\n";
+                cadena_resultado = cadena_resultado + "\nNombre del equipo: " + atts.getValue(atts.getQName(3)) + "\n";
                 ultimoelement = 1;
                 cadena_resultado = cadena_resultado + "\nGoles a favor: " + atts.getValue(atts.getQName(1)) + "\n";
                 ultimoelement = 2;
                 cadena_resultado = cadena_resultado + "\nGoles en contra: " + atts.getValue(atts.getQName(2)) + "\n";
                 ultimoelement = 3;
-                cadena_resultado = cadena_resultado + "\nEstadio: " + atts.getValue(atts.getQName(3)) + "\n";
+                cadena_resultado = cadena_resultado + "\nEstadio: " + atts.getValue(atts.getQName(0)) + "\n";
                 ultimoelement = 4;
                 cadena_resultado = cadena_resultado + "\nPresidente: " + atts.getValue(atts.getQName(4)) + "\n";
                 ultimoelement = 5;

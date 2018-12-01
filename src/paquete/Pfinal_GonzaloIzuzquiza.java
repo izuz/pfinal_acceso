@@ -73,10 +73,18 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
         annadir_boton = new javax.swing.JButton();
         guardar_boton = new javax.swing.JButton();
         annadido_texto = new javax.swing.JLabel();
+        todoo = new javax.swing.JTextField();
+        mejores = new javax.swing.JTextField();
+        mejores_$$ = new javax.swing.JTextField();
+        golllll = new javax.swing.JTextField();
+        cap = new javax.swing.JTextField();
         menu = new javax.swing.JMenuBar();
         consultaas_menu = new javax.swing.JMenu();
         todos_los_datos = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        best = new javax.swing.JMenuItem();
+        mejores_€€ = new javax.swing.JMenuItem();
+        gol = new javax.swing.JMenuItem();
+        c = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -169,13 +177,72 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
 
         annadido_texto.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
+        todoo.setAlignmentX(0.0F);
+        todoo.setBorder(null);
+        todoo.setMaximumSize(new java.awt.Dimension(0, 0));
+        todoo.setMinimumSize(new java.awt.Dimension(0, 0));
+
+        mejores.setAlignmentX(0.0F);
+        mejores.setBorder(null);
+        mejores.setMaximumSize(new java.awt.Dimension(0, 0));
+        mejores.setMinimumSize(new java.awt.Dimension(0, 0));
+
+        mejores_$$.setAlignmentX(0.0F);
+        mejores_$$.setBorder(null);
+        mejores_$$.setMaximumSize(new java.awt.Dimension(0, 0));
+        mejores_$$.setMinimumSize(new java.awt.Dimension(0, 0));
+
+        golllll.setAlignmentX(0.0F);
+        golllll.setBorder(null);
+        golllll.setMaximumSize(new java.awt.Dimension(0, 0));
+        golllll.setMinimumSize(new java.awt.Dimension(0, 0));
+
+        cap.setAlignmentX(0.0F);
+        cap.setBorder(null);
+        cap.setMaximumSize(new java.awt.Dimension(0, 0));
+        cap.setMinimumSize(new java.awt.Dimension(0, 0));
+
         consultaas_menu.setText("Consultas");
 
         todos_los_datos.setText("Todos los datos");
+        todos_los_datos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                todos_los_datosActionPerformed(evt);
+            }
+        });
         consultaas_menu.add(todos_los_datos);
 
-        jMenuItem2.setText("jMenuItem2");
-        consultaas_menu.add(jMenuItem2);
+        best.setText("Mejores jugadores");
+        best.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bestActionPerformed(evt);
+            }
+        });
+        consultaas_menu.add(best);
+
+        mejores_€€.setText("Mejores pagados");
+        mejores_€€.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mejores_€€ActionPerformed(evt);
+            }
+        });
+        consultaas_menu.add(mejores_€€);
+
+        gol.setText("Máximos goleadores");
+        gol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                golActionPerformed(evt);
+            }
+        });
+        consultaas_menu.add(gol);
+
+        c.setText("Capitanes");
+        c.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cActionPerformed(evt);
+            }
+        });
+        consultaas_menu.add(c);
 
         menu.add(consultaas_menu);
 
@@ -201,18 +268,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(equipo, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-                                    .addComponent(en_contra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(a_favor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(estadio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(a_favor_texto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
-                                    .addComponent(en_contra_texto, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(estadio_texto)
-                                    .addComponent(equipo_texto, javax.swing.GroupLayout.Alignment.LEADING)))
+                            .addComponent(todoo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -240,13 +296,47 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                                 .addComponent(annadir_boton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(guardar_boton, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 7, Short.MAX_VALUE)))
+                                .addGap(0, 7, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(equipo, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                                    .addComponent(en_contra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(a_favor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(estadio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(a_favor_texto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+                                    .addComponent(en_contra_texto, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(equipo_texto)
+                                    .addComponent(estadio_texto))
+                                .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(466, Short.MAX_VALUE)
+                    .addComponent(mejores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(341, 341, 341)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(476, Short.MAX_VALUE)
+                    .addComponent(mejores_$$, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(331, 331, 331)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(486, Short.MAX_VALUE)
+                    .addComponent(golllll, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(321, 321, 321)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(496, Short.MAX_VALUE)
+                    .addComponent(cap, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(311, 311, 311)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addComponent(todoo, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(abrir, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(mostrar, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -262,7 +352,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(equipo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(equipo_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(estadio_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(a_favor, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -274,7 +364,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(estadio, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(estadio_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(equipo_texto, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(presi, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -310,6 +400,26 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
                             .addComponent(annadir_boton, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(guardar_boton, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(10, 10, 10)
+                    .addComponent(mejores, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(654, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(20, 20, 20)
+                    .addComponent(mejores_$$, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(644, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(30, 30, 30)
+                    .addComponent(golllll, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(634, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(40, 40, 40)
+                    .addComponent(cap, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(624, Short.MAX_VALUE)))
         );
 
         pack();
@@ -339,8 +449,38 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     private void guardar_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardar_botonActionPerformed
         //String elementos = texto.getText();
         gesJaxb.guardarJaxb(fichero, texto.getText());
-        JOptionPane.showMessageDialog(null,"Guardado correctamene"); 
+        JOptionPane.showMessageDialog(null, "Guardado correctamene");
     }//GEN-LAST:event_guardar_botonActionPerformed
+
+    private void todos_los_datosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_todos_los_datosActionPerformed
+        todoo.setText("/Futbol/Equipo");
+        gesXpath.EjecutaXPath(fichero, todoo.getText());
+        texto.setText(gesXpath.salida);
+    }//GEN-LAST:event_todos_los_datosActionPerformed
+
+    private void bestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bestActionPerformed
+        mejores.setText("/Futbol/Equipo/Mejor_jugador_de_la_historia");
+        gesXpath.EjecutaXPath(fichero, mejores.getText());
+        texto.setText(gesXpath.salida);
+    }//GEN-LAST:event_bestActionPerformed
+
+    private void mejores_€€ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mejores_€€ActionPerformed
+        mejores_$$.setText("/Futbol/Equipo/Jugador_mejor_pagado");
+        gesXpath.EjecutaXPath(fichero, mejores_$$.getText());
+        texto.setText(gesXpath.salida);
+    }//GEN-LAST:event_mejores_€€ActionPerformed
+
+    private void golActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_golActionPerformed
+        golllll.setText("/Futbol/Equipo/Maximo_goleador");
+        gesXpath.EjecutaXPath(fichero, golllll.getText());
+        texto.setText(gesXpath.salida);
+    }//GEN-LAST:event_golActionPerformed
+
+    private void cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cActionPerformed
+        cap.setText("/Futbol/Equipo/Capitan");
+        gesXpath.EjecutaXPath(fichero, cap.getText());
+        texto.setText(gesXpath.salida);
+    }//GEN-LAST:event_cActionPerformed
 
     /**
      * @param args the command line arguments
@@ -361,6 +501,9 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     private javax.swing.JButton abrir;
     private javax.swing.JLabel annadido_texto;
     private javax.swing.JButton annadir_boton;
+    private javax.swing.JMenuItem best;
+    private javax.swing.JMenuItem c;
+    private javax.swing.JTextField cap;
     private javax.swing.JLabel capi;
     private javax.swing.JTextField capi_texto;
     private javax.swing.JLabel cargado;
@@ -373,9 +516,13 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     private javax.swing.JTextField equipo_texto;
     private javax.swing.JLabel estadio;
     private javax.swing.JTextField estadio_texto;
+    private javax.swing.JMenuItem gol;
+    private javax.swing.JTextField golllll;
     private javax.swing.JButton guardar_boton;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField mejores;
+    private javax.swing.JTextField mejores_$$;
+    private javax.swing.JMenuItem mejores_€€;
     private javax.swing.JMenuBar menu;
     private javax.swing.JButton mostrar;
     private javax.swing.JLabel nuevo_texto;
@@ -386,6 +533,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     private javax.swing.JTextArea texto;
     private javax.swing.JLabel thebest;
     private javax.swing.JTextField thebest_texto;
+    private javax.swing.JTextField todoo;
     private javax.swing.JMenuItem todos_los_datos;
     private javax.swing.JLabel ultimo_fichaje;
     private javax.swing.JTextField ultimo_fichaje_texto;
