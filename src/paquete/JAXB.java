@@ -68,7 +68,7 @@ public class JAXB {
             JAXBContext jaxbContext = JAXBContext.newInstance(Futbol.class);
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            jaxbMarshaller.marshal(mifutbol,guradadoconJAXB);
+            jaxbMarshaller.marshal(mifutbol,new FileWriter("guradadoconJAXB.xml"));
             return 0;
         } catch (Exception e) {
             return -1;

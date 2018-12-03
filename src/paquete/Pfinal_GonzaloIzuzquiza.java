@@ -429,6 +429,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     private void abrirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_abrirActionPerformed
         abrirDocumento();
         gesSax.abrir_XML_SAX(fichero); // le pasamos la ruta al reader para que lo lea
+        gesJaxb.abrir_XML_JAXB(fichero);
         texto.setText(gesSax.recorrerSAX()); //nos muestra el contenido del documento 
     }//GEN-LAST:event_abrirActionPerformed
 
@@ -448,6 +449,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     }//GEN-LAST:event_annadir_botonActionPerformed
 
     private void guardar_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardar_botonActionPerformed
+        gesJaxb.recorrerJAXByMostrar();
         gesJaxb.guardarJaxb(fichero);
         JOptionPane.showMessageDialog(null, "Guardado correctamene");
     }//GEN-LAST:event_guardar_botonActionPerformed
