@@ -451,7 +451,7 @@ public class Pfinal_GonzaloIzuzquiza extends javax.swing.JFrame {
     private void guardar_botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardar_botonActionPerformed
         gesJaxb.recorrerJAXByMostrar();
         gesJaxb.guardarJaxb(fichero);
-        JOptionPane.showMessageDialog(null, "Guardado correctamene");
+        JOptionPane.showMessageDialog(null, "Guardado correctamene, en la carpeta del proyecto");
     }//GEN-LAST:event_guardar_botonActionPerformed
 
     private void todos_los_datosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_todos_los_datosActionPerformed
