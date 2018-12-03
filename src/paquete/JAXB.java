@@ -62,13 +62,13 @@ public class JAXB {
         return cadena_resultado;
     }
 
-    public int guardarJaxb(File guradadoconJAXB, String nombre_archivo) {
+    public int guardarJaxb(File guradadoconJAXB) {
 
         try {
             JAXBContext jaxbContext = JAXBContext.newInstance(Futbol.class);
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            jaxbMarshaller.marshal(nombre_archivo, new FileWriter("guradadoconJAXB.xml"));
+            jaxbMarshaller.marshal(mifutbol,guradadoconJAXB);
             return 0;
         } catch (Exception e) {
             return -1;
